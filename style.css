@@ -1,7 +1,7 @@
 
 
 body{
-    
+    background:linear-gradient( rgba(0, 0, 0, 0.479),white);
     margin: 0;
     padding: 0;
    
@@ -10,6 +10,7 @@ body{
     background: url('image2.jpg') no-repeat;
     height: 800px;
     overflow: hidden;
+    z-index: -2;
 }
 
 #welcome{
@@ -69,6 +70,28 @@ h3{
     color: #000;
 }
 
+.name{
+    margin-top: 200px;
+    color: rgb(27, 25, 25);
+   
+}
+
+.presentation{
+    color: rgb(27, 25, 25);
+    padding-bottom: 4rem;
+}
+
+.presentSection{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.bton{
+    margin-left:42% ;
+    height: 3rem;
+    width: 15rem;
+    
+}
 
 #flex{
     display: grid;
@@ -111,7 +134,7 @@ div img{
 
 
 .btn form{
-   display: block;
+   display: flex;
    margin-left: 43%;
    margin-top: 20px;
    margin-bottom: 20px;
@@ -185,7 +208,7 @@ footer .social i:hover{
 } 
 
 /* media quiries */
-
+/* 
 @media(max-width : 874px ){
     #flex{
         display: grid;
@@ -226,30 +249,98 @@ footer .social i:hover{
     
     }
 
-}
+} */
 
-@media(max-width : 500px){
+@media(max-width : 507px){
+
+     #sectionacceuil{
+            background: linear-gradient(rgb(156, 156, 156),white);
+            height: 100px;
+            overflow: hidden;
+        }
+
+    #welcome{
+        height: 100px;
+        padding-top: 2em;
+        text-align: center;
+    }
+
     #flex{
         grid-template-columns: 1fr;
     }
     /* #sectionacceuil{
         
     } */
+
+    .bton{
+        margin-left:25%;
+        
+    }
+
+    .presentation{
+        font-size: medium;
+        padding-top: 3em;
+        
+    }
+
+    .profilBody{
+        background:linear-gradient(rgba(0, 0, 0, 0.479),white);
+    }
+
+    body{
+        background: linear-gradient(white,rgba(0, 0, 0, 0.479));
+    }
+
     .btn form {
-        display: block;
-        margin-left: 8em;
+        display:flex;
+        margin-left: 25%; 
         margin-top: 20px;
         margin-bottom: 21px;
     }
 
     h1{
-       
+        color: rgb(20, 20, 20);
         text-align: center;
-        font-size: 28px;
-        color: rgba(233, 248, 186, 0.767);
-        font-family: 'leto', sans-serif;
-        position: absolute;
+        font-size: 25px;
+        padding-top: 0em;
         }
+
+     h5{
+        font-size: 25px;
+        }  
+        
+    #slogant{
+        margin-bottom: 0;
+        overflow: hidden;
+    }
+
+    footer{
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    footer .footerparaph {
+        padding-left: 0;
+        color: rgb(49, 49, 49);
+    }
+
+    .socialP{
+        
+        font-size: 15px;
+        padding-left: -20px;
+        color: rgb(49, 49, 49);
+       
+    }
+    li{
+      padding-left: 0%;
+      font-size: 15px;
+        
+    }
+
+    a{  
+        color: rgb(49, 49, 49);
+        text-decoration: none;
+    
+    }
 }
 
 
